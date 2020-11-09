@@ -7,7 +7,12 @@ const production = !process.env.ROLLUP_WATCH;
 export default {
   input: 'main.js',
   output: [
-    {file: 'bundle.js', format: 'iife'}
+    {file: 'ol-custom.js',
+      format: 'umd',
+      name: 'ol',
+      exports: "named",
+      sourcemap: true,
+    }
   ],
   plugins: [
     node(),
