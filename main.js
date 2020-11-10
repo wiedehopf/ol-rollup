@@ -1,4 +1,11 @@
-export {Collection, Observable, Map, View, Feature } from 'ol';
+export {Collection, Map, View, Feature } from 'ol';
+
+
+import { unByKey } from 'ol/Observable';
+import { Observable } from 'ol';
+Observable.unByKey = unByKey;
+
+export { Observable };
 
 import { Control, Zoom, Attribution, ScaleLine } from 'ol/control';
 let control = { Control, Zoom, Attribution, ScaleLine };
@@ -16,12 +23,13 @@ let format = {
 };
 export { format };
 
-import { Tile, Group, Vector as VectorLayer, WebGLPoints } from 'ol/layer';
+import { Tile, Group, Vector as VectorLayer, WebGLPoints, Heatmap } from 'ol/layer';
 let layer = {
 	Group: Group,
 	Tile: Tile,
 	Vector: VectorLayer,
 	WebGLPoints: WebGLPoints,
+	Heatmap: Heatmap,
 };
 export { layer };
 
