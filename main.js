@@ -17,9 +17,10 @@ export { interaction };
 import * as sphere from 'ol/sphere';
 export { sphere };
 
-import { GeoJSON } from 'ol/format';
+import { GeoJSON, KML } from 'ol/format';
 let format = {
 	GeoJSON: GeoJSON,
+	KML: KML,
 };
 export { format };
 
