@@ -25,13 +25,14 @@ let format = {
 };
 export { format };
 
-import { Tile, Group, Vector as VectorLayer, WebGLPoints, Heatmap } from 'ol/layer';
+import { Tile, Group, Vector as VectorLayer, WebGLPoints, Heatmap, Image } from 'ol/layer';
 let layer = {
 	Group: Group,
 	Tile: Tile,
 	Vector: VectorLayer,
 	WebGLPoints: WebGLPoints,
 	Heatmap: Heatmap,
+	Image: Image,
 };
 export { layer };
 
@@ -63,13 +64,14 @@ let style = {
 };
 export { style };
 
-import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource} from 'ol/source';
+import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource, ImageWMS} from 'ol/source';
 let source = {
 	OSM: OSM,
 	XYZ: XYZ,
 	TileWMS: TileWMS,
 	BingMaps: BingMaps,
 	Vector: VectorSource,
+	ImageWMS: ImageWMS,
 };
 export {source};
 
