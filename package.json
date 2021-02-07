@@ -13,7 +13,7 @@
     "rollup-plugin-terser": "^5.1.2"
   },
   "dependencies": {
-    "ol": "^6.4.3",
+    "ol": "^6.5.0",
     "ol-layerswitcher": "^3.7.0"
   }
 }
