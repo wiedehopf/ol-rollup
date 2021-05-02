@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "ol": "^6.5.0",
-    "ol-layerswitcher": "^3.7.0"
+    "ol-layerswitcher": "^3.7.0",
+    "ol-mapbox-style": "^6.3.2"
   }
 }

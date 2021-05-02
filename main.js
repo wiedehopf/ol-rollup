@@ -1,5 +1,7 @@
 export {Collection, Map, View, Feature } from 'ol';
 
+import { applyStyle as mbApplyStyle } from 'ol-mapbox-style';
+export { mbApplyStyle };
 
 import { unByKey } from 'ol/Observable';
 import { Observable } from 'ol';
@@ -18,18 +20,20 @@ export { interaction };
 import * as sphere from 'ol/sphere';
 export { sphere };
 
-import { GeoJSON, KML } from 'ol/format';
+import { GeoJSON, KML, MVT } from 'ol/format';
 let format = {
 	GeoJSON: GeoJSON,
 	KML: KML,
+	MVT: MVT,
 };
 export { format };
 
-import { Tile, Group, Vector as VectorLayer, WebGLPoints, Heatmap, Image } from 'ol/layer';
+import { Tile, Group, Vector as VectorLayer, VectorTile, WebGLPoints, Heatmap, Image } from 'ol/layer';
 let layer = {
 	Group: Group,
 	Tile: Tile,
 	Vector: VectorLayer,
+	VectorTile: VectorTile,
 	WebGLPoints: WebGLPoints,
 	Heatmap: Heatmap,
 	Image: Image,
@@ -64,13 +68,14 @@ let style = {
 };
 export { style };
 
-import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource, ImageWMS} from 'ol/source';
+import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource, VectorTile as VTS, ImageWMS} from 'ol/source';
 let source = {
 	OSM: OSM,
 	XYZ: XYZ,
 	TileWMS: TileWMS,
 	BingMaps: BingMaps,
 	Vector: VectorSource,
+	VectorTile: VTS,
 	ImageWMS: ImageWMS,
 };
 export {source};
