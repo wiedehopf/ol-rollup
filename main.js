@@ -1,7 +1,9 @@
 export {Collection, Map, View, Feature } from 'ol';
 
-import { applyStyle as mbApplyStyle } from 'ol-mapbox-style';
-export { mbApplyStyle };
+// disable this, it's really cumbersome and not being used
+// needs dep "ol-mapbox-style": "^6.3.2"
+// import { applyStyle as mbApplyStyle } from 'ol-mapbox-style';
+// export { mbApplyStyle };
 
 import { unByKey } from 'ol/Observable';
 import { Observable } from 'ol';

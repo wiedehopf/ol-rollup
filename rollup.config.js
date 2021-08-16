@@ -1,5 +1,5 @@
-import cjs from 'rollup-plugin-commonjs';
-import node from 'rollup-plugin-node-resolve';
+import cjs from '@rollup/plugin-commonjs';
+import node from '@rollup/plugin-node-resolve';
 import {terser} from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
