@@ -1,12 +1,5 @@
 export {Collection, Map, View, Feature } from 'ol';
 
-import { ellipsoidToEgm96, egm96ToEllipsoid } from 'egm96-universal'
-let egm96_universal = {
-	ellipsoidToEgm96: ellipsoidToEgm96,
-	egm96ToEllipsoid: egm96ToEllipsoid,
-};
-export { egm96_universal };
-
 // disable this, it's really cumbersome and not being used
 // needs dep "ol-mapbox-style": "^6.3.2"
 // import { applyStyle as mbApplyStyle } from 'ol-mapbox-style';
