@@ -1,9 +1,9 @@
-export {Collection, Map, View, Feature } from 'ol';
+import {stylefunction} from 'ol-mapbox-style';
+export {stylefunction};
+import {applyStyle} from 'ol-mapbox-style';
+export {applyStyle};
 
-// disable this, it's really cumbersome and not being used
-// needs dep "ol-mapbox-style": "^6.3.2"
-// import { applyStyle as mbApplyStyle } from 'ol-mapbox-style';
-// export { mbApplyStyle };
+export {Overlay, Collection, Map, View, Feature } from 'ol';
 
 import { unByKey } from 'ol/Observable';
 import { Observable } from 'ol';
@@ -11,7 +11,7 @@ Observable.unByKey = unByKey;
 
 export { Observable };
 
-import { Control, Zoom, Attribution, ScaleLine} from 'ol/control';
+import { Control, Zoom, Attribution, ScaleLine } from 'ol/control';
 import LayerSwitcher from 'ol-layerswitcher';
 let control = { Control, Zoom, Attribution, ScaleLine, LayerSwitcher };
 export { control };
@@ -57,8 +57,6 @@ let geom = {
 };
 export { geom };
 
-//import $Style from 'ol/style/Style';
-//
 import { Style, Text, Stroke, Fill, Circle, Icon } from 'ol/style';
 let style = {
 	Icon: Icon,
@@ -70,7 +68,7 @@ let style = {
 };
 export { style };
 
-import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource, VectorTile as VTS, ImageWMS} from 'ol/source';
+import { OSM, XYZ, TileWMS, BingMaps, Vector as VectorSource, VectorTile as VTS, ImageWMS, ImageStatic } from 'ol/source';
 let source = {
 	OSM: OSM,
 	XYZ: XYZ,
@@ -79,6 +77,7 @@ let source = {
 	Vector: VectorSource,
 	VectorTile: VTS,
 	ImageWMS: ImageWMS,
+	ImageStatic: ImageStatic,
 };
 export {source};
 
