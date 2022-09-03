@@ -11,6 +11,9 @@ Observable.unByKey = unByKey;
 
 export { Observable };
 
+import * as tilegrid from 'ol/tilegrid';
+export { tilegrid };
+
 import { Control, Zoom, Attribution, ScaleLine } from 'ol/control';
 import LayerSwitcher from 'ol-layerswitcher';
 let control = { Control, Zoom, Attribution, ScaleLine, LayerSwitcher };
