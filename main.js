@@ -45,11 +45,7 @@ let layer = {
 };
 export { layer };
 
-import { toLonLat, fromLonLat } from 'ol/proj';
-let proj = {
-	toLonLat: toLonLat,
-	fromLonLat: fromLonLat,
-};
+import * as proj from 'ol/proj';
 export { proj };
 
 import { LineString, Point, MultiPoint } from 'ol/geom';
