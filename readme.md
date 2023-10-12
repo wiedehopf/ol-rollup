@@ -18,3 +18,17 @@ Create a bundle for the browser.
 Open `index.html` to see the result.
 
     open index.html
+
+## Alternatively,
+
+Build the container with:
+
+```bash
+docker build -t ol-rollup .
+```
+
+Then copy the bundle to the host with:
+
+```bash
+docker run --rm -v $(pwd):/pwd ol-rollup cp /app/ol-custom.js /pwd
+```
