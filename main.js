@@ -3,6 +3,9 @@ export {stylefunction};
 import {applyStyle} from 'ol-mapbox-style';
 export {applyStyle};
 
+import {MapboxVectorLayer} from 'ol-mapbox-style';
+export {MapboxVectorLayer};
+
 export {Overlay, Collection, Map, View, Feature } from 'ol';
 
 import { unByKey } from 'ol/Observable';
