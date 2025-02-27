@@ -1,10 +1,5 @@
-import {stylefunction} from 'ol-mapbox-style';
-export {stylefunction};
-import {applyStyle} from 'ol-mapbox-style';
-export {applyStyle};
-
-import {MapboxVectorLayer} from 'ol-mapbox-style';
-export {MapboxVectorLayer};
+import * as mapboxStyle from 'ol-mapbox-style';
+export { mapboxStyle };
 
 export {Overlay, Collection, Map, View, Feature } from 'ol';
 
