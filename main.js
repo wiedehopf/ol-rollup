@@ -31,11 +31,12 @@ let format = {
 };
 export { format };
 
-import { Tile, Group, Vector as VectorLayer, VectorTile, WebGLPoints, Heatmap, Image } from 'ol/layer';
+import { Tile, Group, Vector, VectorImage, VectorTile, WebGLPoints, Heatmap, Image } from 'ol/layer';
 let layer = {
 	Group: Group,
 	Tile: Tile,
-	Vector: VectorLayer,
+	Vector: Vector,
+	VectorImage: VectorImage,
 	VectorTile: VectorTile,
 	WebGLPoints: WebGLPoints,
 	Heatmap: Heatmap,
