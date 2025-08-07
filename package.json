@@ -8,14 +8,14 @@
     "build": "rollup --config rollup.config.js"
   },
   "devDependencies": {
-    "rollup": "^4.34.8",
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^4.46.2",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4"
   },
   "dependencies": {
-    "ol": "^10.4.0",
+    "ol": "^10.6.1",
     "ol-layerswitcher": "^4.1.2",
-    "ol-mapbox-style": "^12.4.1"
+    "ol-mapbox-style": "^13.0.1"
   }
 }
